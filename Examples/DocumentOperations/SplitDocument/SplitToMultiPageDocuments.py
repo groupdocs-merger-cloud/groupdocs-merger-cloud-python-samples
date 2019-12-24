@@ -11,7 +11,7 @@ class SplitToMultiPageDocuments:
         options = groupdocs_merger_cloud.SplitOptions()
         options.file_info = groupdocs_merger_cloud.FileInfo("WordProcessing/sample-10-pages.docx")
         options.output_path = "Output/split-to-multipage-document"
-        options.pages = [2, 4]
+        options.pages = [3, 6, 8]
         options.mode = "Intervals"
 
         result = documentApi.split(groupdocs_merger_cloud.SplitRequest(options))        
