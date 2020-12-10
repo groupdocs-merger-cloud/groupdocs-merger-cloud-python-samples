@@ -6,7 +6,7 @@ from Common import Common
 class CheckDocumentPasswordProtection:
     @classmethod  
     def Run(cls):
-        securityApi = groupdocs_merger_cloud.SecurityApi.from_keys(Common.app_sid, Common.app_key)
+        securityApi = groupdocs_merger_cloud.SecurityApi.from_config(Common.GetConfig())
 
         result = securityApi.check_password(groupdocs_merger_cloud.CheckPasswordRequest("WordProcessing/password-protected.docx"))
 

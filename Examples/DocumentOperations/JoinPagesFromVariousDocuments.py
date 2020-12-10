@@ -6,7 +6,7 @@ from Common import Common
 class JoinPagesFromVariousDocuments:
     @classmethod  
     def Run(cls):
-        documentApi = groupdocs_merger_cloud.DocumentApi.from_keys(Common.app_sid, Common.app_key)
+        documentApi = groupdocs_merger_cloud.DocumentApi.from_config(Common.GetConfig())
 
         item1 = groupdocs_merger_cloud.JoinItem()
         item1.file_info = groupdocs_merger_cloud.FileInfo("WordProcessing/sample-10-pages.docx")

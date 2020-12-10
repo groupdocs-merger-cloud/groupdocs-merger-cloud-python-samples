@@ -6,7 +6,7 @@ from Common import Common
 class AddDocumentPassword:
     @classmethod  
     def Run(cls):
-        securityApi = groupdocs_merger_cloud.SecurityApi.from_keys(Common.app_sid, Common.app_key)
+        securityApi = groupdocs_merger_cloud.SecurityApi.from_config(Common.GetConfig())
 
         options = groupdocs_merger_cloud.Options()
         options.file_info = groupdocs_merger_cloud.FileInfo("WordProcessing/one-page.docx", None, None, "password")

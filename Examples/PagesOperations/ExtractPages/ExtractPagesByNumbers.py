@@ -6,7 +6,7 @@ from Common import Common
 class ExtractPagesByNumbers:
     @classmethod  
     def Run(cls):
-        pagesApi = groupdocs_merger_cloud.PagesApi.from_keys(Common.app_sid, Common.app_key)
+        pagesApi = groupdocs_merger_cloud.PagesApi.from_config(Common.GetConfig())
 
         options = groupdocs_merger_cloud.ExtractOptions()
         options.file_info = groupdocs_merger_cloud.FileInfo("WordProcessing/sample-10-pages.docx")

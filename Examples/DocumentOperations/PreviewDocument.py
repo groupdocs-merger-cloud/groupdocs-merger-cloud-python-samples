@@ -6,7 +6,7 @@ from Common import Common
 class PreviewDocument:
     @classmethod  
     def Run(cls):
-        documentApi = groupdocs_merger_cloud.DocumentApi.from_keys(Common.app_sid, Common.app_key)
+        documentApi = groupdocs_merger_cloud.DocumentApi.from_config(Common.GetConfig())
 
         options = groupdocs_merger_cloud.PreviewOptions()
         options.file_info = groupdocs_merger_cloud.FileInfo("WordProcessing/four-pages.docx")

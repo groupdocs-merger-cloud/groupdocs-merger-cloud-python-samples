@@ -6,7 +6,7 @@ from Common import Common
 class ChangePageOrientation:
     @classmethod  
     def Run(cls):
-        pagesApi = groupdocs_merger_cloud.PagesApi.from_keys(Common.app_sid, Common.app_key)
+        pagesApi = groupdocs_merger_cloud.PagesApi.from_config(Common.GetConfig())
 
         options = groupdocs_merger_cloud.OrientationOptions()
         options.file_info = groupdocs_merger_cloud.FileInfo("WordProcessing/four-pages.docx")
