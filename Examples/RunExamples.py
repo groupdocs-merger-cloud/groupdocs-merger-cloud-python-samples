@@ -38,6 +38,10 @@ SplitToSinglePagesByRangeWithFilter.Run()
 from DocumentOperations.JoinMultipleDocuments import JoinMultipleDocuments
 JoinMultipleDocuments.Run()
 
+# Join multiple documents of various formats
+from DocumentOperations.JoinDocumentsCrossFormat import JoinDocumentsCrossFormat
+JoinDocumentsCrossFormat.Run()
+
 # Join Pages From Various Documents
 from DocumentOperations.JoinPagesFromVariousDocuments import JoinPagesFromVariousDocuments
 JoinPagesFromVariousDocuments.Run()
@@ -45,6 +49,10 @@ JoinPagesFromVariousDocuments.Run()
 # Preview Document
 from DocumentOperations.PreviewDocument import PreviewDocument
 PreviewDocument.Run()
+
+# Import attachment into pdf document
+from DocumentOperations.ImportAttachment import ImportAttachment
+ImportAttachment.Run()
 
 # Change Page Orientation
 from PagesOperations.ChangePageOrientation import ChangePageOrientation
