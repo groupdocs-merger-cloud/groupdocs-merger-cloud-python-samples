@@ -8,4 +8,4 @@ class GetLicenseConsumption:
     def Run(cls):
         licenseApi = groupdocs_merger_cloud.LicenseApi.from_config(Common.GetConfig())
         result = licenseApi.get_consumption_credit()
-        print("Credits = " + str(result.Credit))
+        print("Credits = " + str(result.credit))
