@@ -38,6 +38,10 @@ SplitToSinglePagesByRangeWithFilter.Run()
 from DocumentOperations.JoinMultipleDocuments import JoinMultipleDocuments
 JoinMultipleDocuments.Run()
 
+# Join word documents with continous mode
+from DocumentOperations.JoinWordDocumentsContinous import JoinWordDocumentsContinous
+JoinWordDocumentsContinous.Run()
+
 # Join multiple documents of various formats
 from DocumentOperations.JoinDocumentsCrossFormat import JoinDocumentsCrossFormat
 JoinDocumentsCrossFormat.Run()
